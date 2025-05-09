@@ -1,3 +1,5 @@
+package HelloBiodome;
+
 public class HelloBiodome02 {
     public static void main(String[] args) {
         int solarEnergy = Integer.parseInt(args[0]);

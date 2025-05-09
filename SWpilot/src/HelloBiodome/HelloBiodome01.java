@@ -1,3 +1,5 @@
+package HelloBiodome;
+
 public class HelloBiodome01 {
     public static void main(String[] args) {
         if(args.length > 0) {
