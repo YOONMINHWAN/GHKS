@@ -3,18 +3,22 @@ package HelloBiodome;
 public class HelloBiodome07 {
     public static void main(String[] args) {
         String order = "";
-        String call = args[0];
-        String gene = call.toUpperCase();
+        String answer = args[0];
+        int i;
+        for (i = 1; i < args.length; i++) {
+            answer += args[i];
+        }
+        String gene = answer.toUpperCase();
         if (gene.matches("[CYJEH]*")) {
             int repeat = 1;
             order += gene.charAt(0);
-            for (int i = 1; i < gene.length(); i++) {
-                if (gene.charAt(i) == gene.charAt(i - 1)) {
+            for (int j = 1; j < gene.length(); j++) {
+                if (gene.charAt(j) == gene.charAt(j - 1)) {
                     repeat++;
                 } else {
                     order += repeat;
                     repeat = 1;
-                    order += gene.charAt(i);
+                    order += gene.charAt(j);
                 }
             }
             order += repeat;
