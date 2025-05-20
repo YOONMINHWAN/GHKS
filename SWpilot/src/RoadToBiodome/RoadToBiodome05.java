@@ -57,7 +57,7 @@ public class RoadToBiodome05 {
                 }
                 ranks.set(rank, i);
             }
-            System.out.println("-> " + ranks);
+            System.out.println("-> " + ranks.reversed());
 
         } catch (Exception e) {
             System.out.println("잘못된 입력값이 있습니다!");
