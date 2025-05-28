@@ -13,14 +13,16 @@ public class HelloBiodome07 {
         }
         String gene = answer.toUpperCase();
         //받은 값을 대문자로 변환하여 gene 함수에 삽입
-        if (gene.matches("[CYJEH]*")) { //C, Y, J, E, H 문자가 있을 시 아래 코드 실행
+        if (gene.matches("[CYJEH]*")) {
+            //C, Y, J, E, H 문자가 있을 시 아래 코드 실행
             int repeat = 1;
             //문자가 반복되는 횟수를 저장하는 변수
             order += gene.charAt(0);
             //(최종 출력 변수)에 시작 문자 추가
             for (int j = 1; j < gene.length(); j++) {
                 //gene 변수의 문자 길이만큼 반복 (첫번째 문자는 앞에서 추가했으니 j가 1부터 시작)
-                if (gene.charAt(j) == gene.charAt(j - 1)) { //j번째 문자와 j-1번째 문자가 같으면 아래 코드 실행
+                if (gene.charAt(j) == gene.charAt(j - 1)) {
+                    //j번째 문자와 j-1번째 문자가 같으면 아래 코드 실행
                     repeat++;
                     //반복 횟수에 +1
                 } else {
